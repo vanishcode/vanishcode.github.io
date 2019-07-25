@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>vanishcode&#39;s home</title>
+<title>Hello World Again | vanishcode&#39;s home</title>
 <meta name="description" content="上班不摸鱼" />
 <link rel="shortcut icon" href="https://vanishcode.github.io/favicon.ico?v=1564033665021">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -76,37 +76,68 @@
   </div>
 </div>
 
-    
-        <div class="post-container">
-  
-    <article class="post">
-      <a href="https://vanishcode.github.io/post/hello-world-again">
-        <h2 class="post-title">Hello World Again</h2>
-      </a>
-      <div class="post-info">
-        <span>
-          2019-07-25
-        </span>
-        <span>
-          1 min read
-        </span>
-        
-      </div>
-      
-      <div class="post-abstract">
-        
-      </di>
-    </article>
-  
-</div>
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Hello World Again
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-07-25
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>终于有💰了（并不），所以搞了个<code>.com</code>的域名，决定重新用<code>Gridea</code>写博客，因为真的挺方便的。<br>
+后续的工作有俩点：</p>
+<ul>
+<li>1.博客issue与此仓库同步；</li>
+<li>2.自己写主题，或者移植<code>wordpress</code>和<code>hexo</code>的主题XD</li>
+</ul>
 
-    
-        <div class="pagination-container">
-  
-  
-</div>
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
 
-    
+        
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '27499409914bedf360f4',
+    clientSecret: '2acc7025cbc8e2dbf45f105d0f7d796c720f1ddd',
+    repo: 'vanishcode.github.io',
+    owner: 'vanishcode',
+    admin: ['vanishcode'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
         <div class="site-footer">
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
   <a class="rss" href="https://vanishcode.github.io/atom.xml" target="_blank">RSS</a>
