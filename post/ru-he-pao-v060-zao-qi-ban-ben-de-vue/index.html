@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>关于 | vanishcode&#39;s home</title>
+<title>如何跑v0.6.0早期版本的vue | vanishcode&#39;s home</title>
 <meta name="description" content="上班不摸鱼" />
 <link rel="shortcut icon" href="https://vanishcode.github.io//favicon.ico?v=1564057126243">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -79,11 +79,11 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              关于
+              如何跑v0.6.0早期版本的vue
             </h2>
             <div class="post-info">
               <span>
-                2019-01-25
+                2019-07-25
               </span>
               <span>
                 1 min read
@@ -93,20 +93,55 @@
             
             <div class="post-content-wrapper">
               <div class="post-content">
-                <p>vanishcode——<br>
-👨男<br>
-📅1998年4月<br>
-🏫 HIT<br>
-💻FE，Go，Node.js</p>
+                <p>直接访问tag在0.7.0之前的就行了 https://github.com/vuejs/vue/releases?after=v0.7.0<br>
+那时候还用的是grunt - _ -</p>
+<p>问题：<br>
+直接 <code>npm run test</code>会报错：<br>
+<code>Fatal error: failed to lookup &quot;seed&quot;'s dependency &quot;component-emitter&quot;</code></p>
+<p>package.json里的最好用锁死版本，把 <code>~</code> 都去掉。<br>
+然后安装：<code>npm install -g component@0.16.3</code></p>
+<h3 id="我之前以为这就是一个库用来引用而已其实这是一个命令行程序_">我之前以为这就是一个库用来引用而已，其实这是一个命令行程序=_=！</h3>
+<p>（因为这个货实在是比较老了，7、8年前的东西，貌似最近一年只有一次更新）</p>
+<p>so，自己在跑的时候直接运行：<code>grunt componentbuild:build</code></p>
+<p>然后在<code>dist</code>目录里面就能找到自己编译好的<code>vue.js</code>文件啦</p>
+<p>调试的时候，运行：<code>grunt watch</code></p>
+<p>这时候也没问题啦~</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fzaw0y35h4j307e067aac.jpg" alt=""></p>
+<p>终于可以自己加一些debug语句来分析框架是怎么运行的啦~</p>
+<p>有一点尴尬的是，<code>grunt test</code>命令在<code>mocha</code>那里过不去：</p>
+<p><img src="https://ws4.sinaimg.cn/large/006tNc79ly1fzavxs74tmj30nd06djs2.jpg" alt=""></p>
+<p>参考：<br>
+1.https://github.com/chengkj99/vue-research<br>
+2.https://github.com/zhenyong/notebook/blob/master/vue_notebook/build_challenge.md</p>
 
               </div>
               <div class="toc-container">
-                
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E6%88%91%E4%B9%8B%E5%89%8D%E4%BB%A5%E4%B8%BA%E8%BF%99%E5%B0%B1%E6%98%AF%E4%B8%80%E4%B8%AA%E5%BA%93%E7%94%A8%E6%9D%A5%E5%BC%95%E7%94%A8%E8%80%8C%E5%B7%B2%E5%85%B6%E5%AE%9E%E8%BF%99%E6%98%AF%E4%B8%80%E4%B8%AA%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%A8%8B%E5%BA%8F_">我之前以为这就是一个库用来引用而已，其实这是一个命令行程序=_=！</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
               </div>
             </div>
           </article>
         </div>
 
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://vanishcode.github.io//post/hello-world-again">
+              <h3 class="post-title">
+                Hello World Again
+              </h3>
+            </a>
+          </div>
         
 
         
