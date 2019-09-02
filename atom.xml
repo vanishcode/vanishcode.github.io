@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vanishcode.github.io</id>
     <title>vanishcode&apos;s home</title>
-    <updated>2019-09-02T07:11:12.679Z</updated>
+    <updated>2019-09-02T07:12:49.126Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vanishcode.github.io"/>
     <link rel="self" href="https://vanishcode.github.io/atom.xml"/>
@@ -11,11 +11,20 @@
     <icon>https://vanishcode.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, vanishcode&apos;s home</rights>
     <entry>
-        <title type="html"><![CDATA[工作一个月，总结一下（8月写的）]]></title>
+        <title type="html"><![CDATA[工作两月，总结一哈]]></title>
+        <id>https://vanishcode.github.io/post/gong-zuo-liang-yue-zong-jie-yi-ha</id>
+        <link href="https://vanishcode.github.io/post/gong-zuo-liang-yue-zong-jie-yi-ha">
+        </link>
+        <updated>2019-09-02T07:11:05.000Z</updated>
+        <content type="html"><![CDATA[<p>到今天（9月2号），差不多工作满两个月了，相对于上个月的总结，这一个月收获还是蛮多的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[工作一个月，总结一下]]></title>
         <id>https://vanishcode.github.io/post/gong-zuo-yi-ge-yue-zong-jie-yi-xia</id>
         <link href="https://vanishcode.github.io/post/gong-zuo-yi-ge-yue-zong-jie-yi-xia">
         </link>
-        <updated>2019-09-02T07:04:12.000Z</updated>
+        <updated>2019-08-05T07:04:12.000Z</updated>
         <content type="html"><![CDATA[<p>正式参加工作一个多月了，该总结一下了。主要分为两个部分，工作上和生活上。</p>
 <h3 id="工作">工作</h3>
 <p>1.写代码之前一定要想好再开始写 XD，有多少接口，会出现什么错误，变量放在哪里······；</p>
@@ -34,15 +43,6 @@
 <p>2.周末找机会出去，不要宅两天，最起码一天要出去；</p>
 <p>3.晚上回去别吃零食了。</p>
 <p><img src="https://gitee.com/vanishcode/upics/raw/master/1.jpg" alt="pic"></p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[工作两月，总结一哈]]></title>
-        <id>https://vanishcode.github.io/post/gong-zuo-liang-yue-zong-jie-yi-ha</id>
-        <link href="https://vanishcode.github.io/post/gong-zuo-liang-yue-zong-jie-yi-ha">
-        </link>
-        <updated>2019-08-05T07:06:13.000Z</updated>
-        <content type="html"><![CDATA[<p>到今天（9月2号），差不多工作满两个月了，相对于上个月的总结，这一个月收获还是蛮多的。</p>
 ]]></content>
     </entry>
     <entry>
@@ -71,20 +71,6 @@
 <p>参考：<br>
 1.http://t.cn/AijfP8br<br>
 2.http://t.cn/AijfPWBz</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hello World Again]]></title>
-        <id>https://vanishcode.github.io/post/hello-world-again</id>
-        <link href="https://vanishcode.github.io/post/hello-world-again">
-        </link>
-        <updated>2019-07-25T05:47:30.000Z</updated>
-        <content type="html"><![CDATA[<p>终于有💰了（并不），所以搞了个<code>.com</code>的域名，决定重新用<code>Gridea</code>写博客，因为真的挺方便的。<br>
-后续的工作有俩点：</p>
-<ul>
-<li>1.博客issue与此仓库同步；</li>
-<li>2.自己写主题，或者移植<code>wordpress</code>和<code>hexo</code>的主题XD</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
