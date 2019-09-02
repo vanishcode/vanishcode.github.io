@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vanishcode.github.io</id>
     <title>vanishcode&apos;s home</title>
-    <updated>2019-09-02T07:04:43.499Z</updated>
+    <updated>2019-09-02T07:07:09.024Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vanishcode.github.io"/>
     <link rel="self" href="https://vanishcode.github.io/atom.xml"/>
@@ -11,7 +11,16 @@
     <icon>https://vanishcode.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, vanishcode&apos;s home</rights>
     <entry>
-        <title type="html"><![CDATA[工作一个月，总结一下]]></title>
+        <title type="html"><![CDATA[工作两月，总结一哈]]></title>
+        <id>https://vanishcode.github.io/post/gong-zuo-liang-yue-zong-jie-yi-ha</id>
+        <link href="https://vanishcode.github.io/post/gong-zuo-liang-yue-zong-jie-yi-ha">
+        </link>
+        <updated>2019-09-02T07:06:13.000Z</updated>
+        <content type="html"><![CDATA[<p>到今天（9月2号），差不多工作满两个月了，相对于上个月的总结，这一个月收获还是蛮多的。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[工作一个月，总结一下（8月写的）]]></title>
         <id>https://vanishcode.github.io/post/gong-zuo-yi-ge-yue-zong-jie-yi-xia</id>
         <link href="https://vanishcode.github.io/post/gong-zuo-yi-ge-yue-zong-jie-yi-xia">
         </link>
