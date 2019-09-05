@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vanishcode.github.io</id>
     <title>vanishcode&apos;s home</title>
-    <updated>2019-09-02T07:15:22.727Z</updated>
+    <updated>2019-09-05T07:55:14.046Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vanishcode.github.io"/>
     <link rel="self" href="https://vanishcode.github.io/atom.xml"/>
@@ -10,6 +10,22 @@
     <logo>https://vanishcode.github.io/images/avatar.png</logo>
     <icon>https://vanishcode.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, vanishcode&apos;s home</rights>
+    <entry>
+        <title type="html"><![CDATA[不要随便改动macOS或MacOSX自带的python]]></title>
+        <id>https://vanishcode.github.io/post/bu-yao-sui-bian-gai-dong-macos-huo-macosx-zi-dai-de-python</id>
+        <link href="https://vanishcode.github.io/post/bu-yao-sui-bian-gai-dong-macos-huo-macosx-zi-dai-de-python">
+        </link>
+        <updated>2019-09-05T07:53:54.000Z</updated>
+        <content type="html"><![CDATA[<p>mac自带python2.6和python2.7，这两个都在 <code>Python.framework</code> 中，而且里面由2.2和2.3的快捷方式，其实是指向=&gt;2.6。</p>
+<p>而且vscode的<code>code .</code>命令行开启vscode其实用的是python...<br>
+这个东东在<code>/Applications/Visual Studio Code.app/Contents/Resources/app/bin</code>，你会看到里面有python调用....</p>
+<p>因此如果乱动乱删自带的python，其中一个问题就是不能命令行飞快地打开code了<sub>_</sub></p>
+<p>当然也非常可能发生更严重的问题！比如某些系统软件从此不能打开之类的，或者自动更新中出现问题。因为mac或linux很多应用都依赖于自带的环境（不止python2哦）。</p>
+<p>参考：<br>
+1.https://stackoverflow.com/questions/10212270/python-asks-for-older-paths-on-mac-after-deleting-duplicate-python-installation<br>
+2.https://github.com/Microsoft/vscode/issues/3790</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[工作两月，总结一哈]]></title>
         <id>https://vanishcode.github.io/post/gong-zuo-liang-yue-zong-jie-yi-ha</id>
