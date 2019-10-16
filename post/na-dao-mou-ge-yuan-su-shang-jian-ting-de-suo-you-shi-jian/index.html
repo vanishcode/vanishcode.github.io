@@ -1,8 +1,8 @@
 <html>
   <head>
-  <meta charset="utf-8" />
+    <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>vanishcode&#39;s home</title>
+<title>拿到某个元素上监听的所有事件 | vanishcode&#39;s home</title>
 <meta name="description" content="上班不摸鱼" />
 <link rel="shortcut icon" href="https://vanishcode.github.io/favicon.ico?v=1571187739000">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -70,12 +70,96 @@
   </div>
 </div>
 
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              拿到某个元素上监听的所有事件
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-10-16
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>同学做毕设时候遇到的问题——</p>
+<pre><code class="language-js">function traversal(node) {
+    if (node &amp;&amp; node.nodeType === 1) {
+        //  fuck, `getEventListeners()` only for Chrome  in CLI !
+        var eventsList = $._data(node, &quot;events&quot;)           
+        if (JSON.stringify(eventsList) !== undefined) {
+            console.log(eventsList);
+        }
+    }
+    var i = 0,
+        childNodes = node.childNodes,
+        item;
+    for (; i &lt; childNodes.length; i++) {
+        item = childNodes[i];
+        if (item.nodeType === 1) {
+            traversal(item);
+        }
+    }
+}
 
-        <div class="tags-container">
-          
-            <a class="tag" href="https://vanishcode.github.io/tag/4M3LLRCy_">总结</a>
-          
+var doc = document.documentElement
+
+traversal(doc)
+
+(function() {
+    var result = []
+    function traversal(node) {
+        if (node &amp;&amp; node.nodeType === 1) {
+            var eventsList = $._data(node, &quot;events&quot;)
+            if (eventsList !== undefined) {
+                result.push(eventsList);
+            }
+        }
+        var i = 0,
+            childNodes = node.childNodes,
+            item;
+        for (; i &lt; childNodes.length; i++) {
+            item = childNodes[i];
+            if (item.nodeType === 1) {
+                traversal(item);
+            }
+        }
+    }
+
+    var doc = document.getElementsByTagName('body')[0]
+
+    traversal(doc)
+
+    return result
+
+})()
+</code></pre>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
         </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://vanishcode.github.io/post/sf-hui-da-wen-ti-you-gan">
+              <h3 class="post-title">
+                sf回答问题有感
+              </h3>
+            </a>
+          </div>
+        
+
+        
 
         <div class="site-footer">
   Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 

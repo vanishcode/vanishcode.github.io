@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vanishcode.github.io</id>
     <title>vanishcode&apos;s home</title>
-    <updated>2019-10-16T00:39:52.851Z</updated>
+    <updated>2019-10-16T01:02:26.475Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vanishcode.github.io"/>
     <link rel="self" href="https://vanishcode.github.io/atom.xml"/>
@@ -10,6 +10,66 @@
     <logo>https://vanishcode.github.io/images/avatar.png</logo>
     <icon>https://vanishcode.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, vanishcode&apos;s home</rights>
+    <entry>
+        <title type="html"><![CDATA[拿到某个元素上监听的所有事件]]></title>
+        <id>https://vanishcode.github.io/post/na-dao-mou-ge-yuan-su-shang-jian-ting-de-suo-you-shi-jian</id>
+        <link href="https://vanishcode.github.io/post/na-dao-mou-ge-yuan-su-shang-jian-ting-de-suo-you-shi-jian">
+        </link>
+        <updated>2019-10-16T01:01:49.000Z</updated>
+        <content type="html"><![CDATA[<p>同学做毕设时候遇到的问题——</p>
+<pre><code class="language-js">function traversal(node) {
+    if (node &amp;&amp; node.nodeType === 1) {
+        //  fuck, `getEventListeners()` only for Chrome  in CLI !
+        var eventsList = $._data(node, &quot;events&quot;)           
+        if (JSON.stringify(eventsList) !== undefined) {
+            console.log(eventsList);
+        }
+    }
+    var i = 0,
+        childNodes = node.childNodes,
+        item;
+    for (; i &lt; childNodes.length; i++) {
+        item = childNodes[i];
+        if (item.nodeType === 1) {
+            traversal(item);
+        }
+    }
+}
+
+var doc = document.documentElement
+
+traversal(doc)
+
+(function() {
+    var result = []
+    function traversal(node) {
+        if (node &amp;&amp; node.nodeType === 1) {
+            var eventsList = $._data(node, &quot;events&quot;)
+            if (eventsList !== undefined) {
+                result.push(eventsList);
+            }
+        }
+        var i = 0,
+            childNodes = node.childNodes,
+            item;
+        for (; i &lt; childNodes.length; i++) {
+            item = childNodes[i];
+            if (item.nodeType === 1) {
+                traversal(item);
+            }
+        }
+    }
+
+    var doc = document.getElementsByTagName('body')[0]
+
+    traversal(doc)
+
+    return result
+
+})()
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[sf回答问题有感]]></title>
         <id>https://vanishcode.github.io/post/sf-hui-da-wen-ti-you-gan</id>
