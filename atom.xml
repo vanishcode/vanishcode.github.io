@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vanishcode.github.io</id>
     <title>vanishcode&apos;s home</title>
-    <updated>2019-09-20T14:03:57.263Z</updated>
+    <updated>2019-10-16T00:26:56.683Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vanishcode.github.io"/>
     <link rel="self" href="https://vanishcode.github.io/atom.xml"/>
@@ -73,7 +73,7 @@
 <p>1.下班回家娱乐时间不要太长，能学就学；</p>
 <p>2.周末找机会出去，不要宅两天，最起码一天要出去；</p>
 <p>3.晚上回去别吃零食了。</p>
-<p><img src="https://gitee.com/vanishcode/upics/raw/master/1.jpg" alt="pic"></p>
+<figure data-type="image" tabindex="1"><img src="https://gitee.com/vanishcode/upics/raw/master/1.jpg" alt="pic"></figure>
 ]]></content>
     </entry>
     <entry>
@@ -95,10 +95,10 @@
 <p>然后在<code>dist</code>目录里面就能找到自己编译好的<code>vue.js</code>文件啦</p>
 <p>调试的时候，运行：<code>grunt watch</code></p>
 <p>这时候也没问题啦~</p>
-<p><img src="https://i.loli.net/2019/07/26/5d3a4ef9b3ee719585.jpg" alt=""></p>
+<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2019/07/26/5d3a4ef9b3ee719585.jpg" alt=""></figure>
 <p>终于可以自己加一些debug语句来分析框架是怎么运行的啦~</p>
 <p>有一点尴尬的是，<code>grunt test</code>命令在<code>mocha</code>那里过不去：</p>
-<p><img src="https://i.loli.net/2019/07/26/5d3a4ef9c540a84540.jpg" alt=""></p>
+<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2019/07/26/5d3a4ef9c540a84540.jpg" alt=""></figure>
 <p>参考：<br>
 1.http://t.cn/AijfP8br<br>
 2.http://t.cn/AijfPWBz</p>
