@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vanishcode.github.io</id>
     <title>vanishcode&apos;s home</title>
-    <updated>2019-10-18T03:11:58.846Z</updated>
+    <updated>2019-11-02T15:54:05.126Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vanishcode.github.io"/>
     <link rel="self" href="https://vanishcode.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://vanishcode.github.io/images/avatar.png</logo>
     <icon>https://vanishcode.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, vanishcode&apos;s home</rights>
+    <entry>
+        <title type="html"><![CDATA[在Nuxt里面使用G2库]]></title>
+        <id>https://vanishcode.github.io/post/zai-nuxt-li-mian-shi-yong-g2-ku</id>
+        <link href="https://vanishcode.github.io/post/zai-nuxt-li-mian-shi-yong-g2-ku">
+        </link>
+        <updated>2019-11-02T15:53:23.000Z</updated>
+        <content type="html"><![CDATA[<p>通过plugin的方式会初始化失败，提示没有document，因为走了打包流程，nodejs环境里面没有BOM DOM对象，于是采用下面的方法：</p>
+<p>1.在nuxt.config.js里面通过script标签形式直接引入</p>
+<p>2.这样的话引入的库不走nuxt打包流程，于是就不存在没有document或者window对象的问题</p>
+<p>3.这样其实和在html里面直接使用g2等库没有区别了，在vue里面一样写的，因为G2已经通过script方式引入到了document里面，console.log一下window.G2，是有这个对象的</p>
+<p>4.一般在mount里面初始化</p>
+<p>今天（16）仔细看了一下nuxt文档，应该是</p>
+<pre><code class="language-js">module.exports = {
+  plugins: [
+    { src: '~/plugins/vue-notifications', ssr: false }
+  ]
+}
+</code></pre>
+<p>把ssr写成false就可以了，这样不走服务端。</p>
+<p>问题：echarts可以ssr：true，但是g2不可以，为什么呢。。。。。。。。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[antd pro 的数据流动]]></title>
         <id>https://vanishcode.github.io/post/antd-pro-de-shu-ju-liu-dong</id>
