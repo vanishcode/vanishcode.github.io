@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vanishcode.github.io</id>
     <title>vanishcode&apos;s home</title>
-    <updated>2019-11-03T09:56:05.307Z</updated>
+    <updated>2019-11-29T15:26:55.874Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vanishcode.github.io"/>
     <link rel="self" href="https://vanishcode.github.io/atom.xml"/>
@@ -10,6 +10,23 @@
     <logo>https://vanishcode.github.io/images/avatar.png</logo>
     <icon>https://vanishcode.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, vanishcode&apos;s home</rights>
+    <entry>
+        <title type="html"><![CDATA[最近做了一个组件，写写收获]]></title>
+        <id>https://vanishcode.github.io/post/zui-jin-zuo-liao-yi-ge-zu-jian-xie-xie-shou-huo</id>
+        <link href="https://vanishcode.github.io/post/zui-jin-zuo-liao-yi-ge-zu-jian-xie-xie-shou-huo">
+        </link>
+        <updated>2019-11-29T15:11:52.000Z</updated>
+        <content type="html"><![CDATA[<p>1.单向数据流<br>
+子组件只管渲染，父组件只管数据更改；<br>
+子组件state尽量只和自己状态有关（与渲染用的数据低耦合），比如下拉是否展开，这种最好是用state。</p>
+<p>2.项目结构<br>
+最好有一套属于自己的模板，每次做组件的时候可以快速投入开发，而不是搞一堆配置文件；<br>
+做之前想好组件、工具集怎么拆分。</p>
+<p>3.其他<br>
+必须熟练使用，源码必读：react &amp; antd，vue &amp; element；<br>
+以及项目配套的构建工具：Webpack，umi，storybook等等配置手到擒来。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[js不准确的定时器的修正]]></title>
         <id>https://vanishcode.github.io/post/js-bu-zhun-que-de-ding-shi-qi-de-xiu-zheng</id>
@@ -258,33 +275,6 @@ traversal(doc)
 <p>参考：<br>
 1.http://t.cn/AijfP8br<br>
 2.http://t.cn/AijfPWBz</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[FydeOS试用~_~【多图杀机】]]></title>
-        <id>https://vanishcode.github.io/post/fydeos-shi-yong-~_~duo-tu-sha-ji</id>
-        <link href="https://vanishcode.github.io/post/fydeos-shi-yong-~_~duo-tu-sha-ji">
-        </link>
-        <updated>2019-01-08T03:11:11.000Z</updated>
-        <content type="html"><![CDATA[<p>地址：https://fydeos.com/</p>
-<p>总体来说，感觉就是个。。。大虚拟机，没有官网说的那么强大。也可能是我姿势不对？XD</p>
-<p>系统一进去：<br>
-<img src="http://ww1.sinaimg.cn/large/a771712fly1fzasmbd5tqj20wo0ol7wh.jpg" alt=""></p>
-<p>左下角的圆圈类似启动器：<br>
-<img src="http://ww1.sinaimg.cn/large/a771712fly1fzask22g2uj20wo0ol430.jpg" alt=""></p>
-<p>安卓的话，系统里自带一个安卓系统，秒开。下载完apk文件双击自动唤醒安卓虚拟机安装<br>
-<img src="http://ww1.sinaimg.cn/large/a771712fly1fzasovqwgcj20wo0ol1kx.jpg" alt=""></p>
-<p>启动器里：<br>
-<img src="http://ww1.sinaimg.cn/large/a771712fly1fzasqd8r37j20wo0oltg0.jpg" alt=""></p>
-<p>右下角的通知和类似于Android状态栏的东东：<br>
-<img src="http://ww1.sinaimg.cn/large/a771712fly1fzasr7ih1jj20wo0olwyp.jpg" alt=""></p>
-<p>设置里一些选项：<br>
-<img src="http://ww1.sinaimg.cn/large/a771712fly1fzassjqthkj20wo0olgq1.jpg" alt=""></p>
-<p>注意这里可以打开linux虚拟机（系统不自带好像得现下，然而下载失败，不知为何，我也挂了梯子=_=）<br>
-<img src="http://ww1.sinaimg.cn/large/a771712fly1fzast301rpj20wo0olq7g.jpg" alt=""></p>
-<p>总之体验不是特别好，没看到ChromeOS的类似应用商店的东东；Linux虚拟机得现场下载，而且比较慢；没有让人用的欲望，比如我想开qq，需要用安卓虚拟机。。想用office其实是得用wine（crossover for chrome os）。。<br>
-不知道是不是已经有企业采用了，感觉不是很成熟。。</p>
-<p>不过界面挺好看的XD</p>
 ]]></content>
     </entry>
 </feed>

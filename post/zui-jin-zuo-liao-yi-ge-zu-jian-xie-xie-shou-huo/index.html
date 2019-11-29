@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>不要随便改动macOS或MacOSX自带的python | vanishcode&#39;s home</title>
+<title>最近做了一个组件，写写收获 | vanishcode&#39;s home</title>
 <meta name="description" content="上班不摸鱼">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -92,27 +92,28 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">不要随便改动macOS或MacOSX自带的python</h2>
-            <div class="post-date">2019-09-05</div>
+            <h2 class="post-title">最近做了一个组件，写写收获</h2>
+            <div class="post-date">2019-11-29</div>
             
             <div class="post-content">
-              <p>mac自带python2.6和python2.7，这两个都在 <code>Python.framework</code> 中，而且里面由2.2和2.3的快捷方式，其实是指向=&gt;2.6。</p>
-<p>而且vscode的<code>code .</code>命令行开启vscode其实用的是python...<br>
-这个东东在<code>/Applications/Visual Studio Code.app/Contents/Resources/app/bin</code>，你会看到里面有python调用....</p>
-<p>因此如果乱动乱删自带的python，其中一个问题就是不能命令行飞快地打开code了<sub>_</sub></p>
-<p>当然也非常可能发生更严重的问题！比如某些系统软件从此不能打开之类的，或者自动更新中出现问题。因为mac或linux很多应用都依赖于自带的环境（不止python2哦）。</p>
-<p>参考：<br>
-1.https://stackoverflow.com/questions/10212270/python-asks-for-older-paths-on-mac-after-deleting-duplicate-python-installation<br>
-2.https://github.com/Microsoft/vscode/issues/3790</p>
+              <p>1.单向数据流<br>
+子组件只管渲染，父组件只管数据更改；<br>
+子组件state尽量只和自己状态有关（与渲染用的数据低耦合），比如下拉是否展开，这种最好是用state。</p>
+<p>2.项目结构<br>
+最好有一套属于自己的模板，每次做组件的时候可以快速投入开发，而不是搞一堆配置文件；<br>
+做之前想好组件、工具集怎么拆分。</p>
+<p>3.其他<br>
+必须熟练使用，源码必读：react &amp; antd，vue &amp; element；<br>
+以及项目配套的构建工具：Webpack，umi，storybook等等配置手到擒来。</p>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://vanishcode.github.io/post/gong-zuo-liang-yue-zong-jie-yi-ha">
+                <a href="https://vanishcode.github.io/post/js-bu-zhun-que-de-ding-shi-qi-de-xiu-zheng">
                   <h3 class="post-title">
-                    工作两月，总结一哈
+                    js不准确的定时器的修正
                   </h3>
                 </a>
               </div>
