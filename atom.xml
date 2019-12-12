@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vanishcode.github.io</id>
     <title>vanishcode&apos;s home</title>
-    <updated>2019-12-09T13:28:40.026Z</updated>
+    <updated>2019-12-12T14:08:36.459Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vanishcode.github.io"/>
     <link rel="self" href="https://vanishcode.github.io/atom.xml"/>
@@ -10,6 +10,26 @@
     <logo>https://vanishcode.github.io/images/avatar.png</logo>
     <icon>https://vanishcode.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, vanishcode&apos;s home</rights>
+    <entry>
+        <title type="html"><![CDATA[2019年的]]></title>
+        <id>https://vanishcode.github.io/post/2019-nian-de</id>
+        <link href="https://vanishcode.github.io/post/2019-nian-de">
+        </link>
+        <updated>2019-12-12T14:07:19.000Z</updated>
+        <content type="html"><![CDATA[<p>参与一些小到中型有点名气的开源项目，主要方向前端、Nodejs、Go，然后有精力的话搞搞macOS或者iOS开发，毕竟有设备。</p>
+<p>基本做毕设的半年应该不会很忙，有可能做个外包什么的赚点外快。</p>
+<p>新年第一天，怎么也得有个规划的。2019年要毕业了，要工作了，可惜没什么实感。</p>
+<p>总之这一年也不一定要我要怎么怎么样，好好活着，坚持做一点不太平凡 / 和平时不一样的事，就不会走下坡路了吧。</p>
+<hr>
+<p>2019计划学习/掌握的技术：</p>
+<p>0.深入js，深入各种web技术，比如，直播、webgl等</p>
+<p>1.typescript</p>
+<p>2.reactjs相关</p>
+<p>3.macos原生开发</p>
+<p>4.c，编译器相关，wpf，qt</p>
+<p>5.正规的开源协作流程、源码阅读技术</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[最近做了一个组件，写写收获]]></title>
         <id>https://vanishcode.github.io/post/zui-jin-zuo-liao-yi-ge-zu-jian-xie-xie-shou-huo</id>
@@ -246,35 +266,6 @@ traversal(doc)
 <p>2.周末找机会出去，不要宅两天，最起码一天要出去；</p>
 <p>3.晚上回去别吃零食了。</p>
 <figure data-type="image" tabindex="1"><img src="https://gitee.com/vanishcode/upics/raw/master/1.jpg" alt="pic"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何跑v0.6.0早期版本的vue]]></title>
-        <id>https://vanishcode.github.io/post/ru-he-pao-v060-zao-qi-ban-ben-de-vue</id>
-        <link href="https://vanishcode.github.io/post/ru-he-pao-v060-zao-qi-ban-ben-de-vue">
-        </link>
-        <updated>2019-07-25T12:18:35.000Z</updated>
-        <content type="html"><![CDATA[<p>直接访问tag在0.7.0之前的就行了 <code>releases?after=v0.7.0</code><br>
-那时候还用的是grunt - _ -</p>
-<h3 id="问题">问题</h3>
-<p>直接 <code>npm run test</code>会报错：<br>
-<code>Fatal error: failed to lookup &quot;seed&quot;'s dependency &quot;component-emitter&quot;</code></p>
-<p>package.json里的最好用锁死版本，把 <code>~</code> 都去掉。<br>
-然后安装：<code>npm install -g component@0.16.3</code></p>
-<h3 id="我之前以为这就是一个库用来引用而已其实这是一个命令行程序_">我之前以为这就是一个库用来引用而已，其实这是一个命令行程序=_=！</h3>
-<p>（因为这个货实在是比较老了，7、8年前的东西，貌似最近一年只有一次更新）</p>
-<p>so，自己在跑的时候直接运行：<code>grunt componentbuild:build</code></p>
-<p>然后在<code>dist</code>目录里面就能找到自己编译好的<code>vue.js</code>文件啦</p>
-<p>调试的时候，运行：<code>grunt watch</code></p>
-<p>这时候也没问题啦~</p>
-<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2019/07/26/5d3a4ef9b3ee719585.jpg" alt=""></figure>
-<p>终于可以自己加一些debug语句来分析框架是怎么运行的啦~</p>
-<h3 id="其他">其他</h3>
-<p>有一点尴尬的是，<code>grunt test</code>命令在<code>mocha</code>那里过不去：</p>
-<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2019/07/26/5d3a4ef9c540a84540.jpg" alt=""></figure>
-<p>参考：<br>
-1.http://t.cn/AijfP8br<br>
-2.http://t.cn/AijfPWBz</p>
 ]]></content>
     </entry>
 </feed>
