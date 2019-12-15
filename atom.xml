@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vanishcode.github.io</id>
     <title>vanishcode&apos;s home</title>
-    <updated>2019-12-12T14:09:24.306Z</updated>
+    <updated>2019-12-15T02:45:09.716Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vanishcode.github.io"/>
     <link rel="self" href="https://vanishcode.github.io/atom.xml"/>
@@ -10,6 +10,25 @@
     <logo>https://vanishcode.github.io/images/avatar.png</logo>
     <icon>https://vanishcode.github.io/favicon.ico</icon>
     <rights>All rights reserved 2019, vanishcode&apos;s home</rights>
+    <entry>
+        <title type="html"><![CDATA[搞技术的人容易犯的错误]]></title>
+        <id>https://vanishcode.github.io/post/gao-ji-zhu-de-ren-rong-yi-fan-de-cuo-wu</id>
+        <link href="https://vanishcode.github.io/post/gao-ji-zhu-de-ren-rong-yi-fan-de-cuo-wu">
+        </link>
+        <updated>2019-12-15T02:43:31.000Z</updated>
+        <content type="html"><![CDATA[<p>刚刚被面试官吊打了一下。虽然面试不是说多么高大上的题目，但是基本都是很可以考察一个人基本功的题目。然后我想，我又犯这个错误了——好高骛远，眼高手低。</p>
+<p>貌似很多新人都会有这个问题。拿我来说，有些问题知道该怎么写，但不知为什么不这么写，举个随便想的栗子：</p>
+<pre><code class="language-js">function a(){
+    return b(){
+        // 为什么没有这样用的？
+    }
+}
+</code></pre>
+<p>很多东西你只见过，看过，但没有思考过，所以，面试时候，每个题其实都见过，但让你写出来，就傻眼了。</p>
+<p>还有一个问题就是老是去追求高大上，比如Vue源码之类的，比如我就是。没完全搞明白怎么使用，怎么更有效率的使用，就去读源码，所以只是读完了没有任何收获。真正的基础以为都会了，结果考一个真正基础的反而傻眼了。</p>
+<p>悲哀啊，以后注意了，想把啥做好，差不多都一样，就是——从浅入深，认真思考。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[最近做了一个组件，写写收获]]></title>
         <id>https://vanishcode.github.io/post/zui-jin-zuo-liao-yi-ge-zu-jian-xie-xie-shou-huo</id>
@@ -246,35 +265,6 @@ traversal(doc)
 <p>2.周末找机会出去，不要宅两天，最起码一天要出去；</p>
 <p>3.晚上回去别吃零食了。</p>
 <figure data-type="image" tabindex="1"><img src="https://gitee.com/vanishcode/upics/raw/master/1.jpg" alt="pic"></figure>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何跑v0.6.0早期版本的vue]]></title>
-        <id>https://vanishcode.github.io/post/ru-he-pao-v060-zao-qi-ban-ben-de-vue</id>
-        <link href="https://vanishcode.github.io/post/ru-he-pao-v060-zao-qi-ban-ben-de-vue">
-        </link>
-        <updated>2019-07-25T12:18:35.000Z</updated>
-        <content type="html"><![CDATA[<p>直接访问tag在0.7.0之前的就行了 <code>releases?after=v0.7.0</code><br>
-那时候还用的是grunt - _ -</p>
-<h3 id="问题">问题</h3>
-<p>直接 <code>npm run test</code>会报错：<br>
-<code>Fatal error: failed to lookup &quot;seed&quot;'s dependency &quot;component-emitter&quot;</code></p>
-<p>package.json里的最好用锁死版本，把 <code>~</code> 都去掉。<br>
-然后安装：<code>npm install -g component@0.16.3</code></p>
-<h3 id="我之前以为这就是一个库用来引用而已其实这是一个命令行程序_">我之前以为这就是一个库用来引用而已，其实这是一个命令行程序=_=！</h3>
-<p>（因为这个货实在是比较老了，7、8年前的东西，貌似最近一年只有一次更新）</p>
-<p>so，自己在跑的时候直接运行：<code>grunt componentbuild:build</code></p>
-<p>然后在<code>dist</code>目录里面就能找到自己编译好的<code>vue.js</code>文件啦</p>
-<p>调试的时候，运行：<code>grunt watch</code></p>
-<p>这时候也没问题啦~</p>
-<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2019/07/26/5d3a4ef9b3ee719585.jpg" alt=""></figure>
-<p>终于可以自己加一些debug语句来分析框架是怎么运行的啦~</p>
-<h3 id="其他">其他</h3>
-<p>有一点尴尬的是，<code>grunt test</code>命令在<code>mocha</code>那里过不去：</p>
-<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2019/07/26/5d3a4ef9c540a84540.jpg" alt=""></figure>
-<p>参考：<br>
-1.http://t.cn/AijfP8br<br>
-2.http://t.cn/AijfPWBz</p>
 ]]></content>
     </entry>
 </feed>
