@@ -1,102 +1,93 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>搞技术的人容易犯的错误 | vanishcode&#39;s home</title>
-<meta name="description" content="上班不摸鱼">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+<meta name="description" content="上班不摸鱼" />
+<link rel="shortcut icon" href="https://vanishcode.github.io/favicon.ico?v=1576598441703">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://vanishcode.github.io/favicon.ico?v=1576598381493">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://vanishcode.github.io/styles/main.css">
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://vanishcode.github.io">
-        <img src="https://vanishcode.github.io/images/avatar.png?v=1576598381493" class="site-logo">
-        <h1 class="site-title">vanishcode&#39;s home</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://vanishcode.github.io">
+  <img class="avatar" src="https://vanishcode.github.io/images/avatar.png?v=1576598441703" alt="">
+  </a>
+  <h1 class="site-title">
+    vanishcode&#39;s home
+  </h1>
+  <p class="site-description">
+    上班不摸鱼
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          归档
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-    </div>
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
+  <div class="social-container">
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
-      
-    </div>
-    <div class="site-description">
-      上班不摸鱼
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://vanishcode.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
+    
   </div>
 </div>
 
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">搞技术的人容易犯的错误</h2>
-            <div class="post-date">2018-12-01</div>
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              搞技术的人容易犯的错误
+            </h2>
+            <div class="post-info">
+              <span>
+                2018-12-01
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
             
-            <div class="post-content">
-              <p>刚刚被面试官吊打了一下。虽然面试不是说多么高大上的题目，但是基本都是很可以考察一个人基本功的题目。然后我想，我又犯这个错误了——好高骛远，眼高手低。</p>
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>刚刚被面试官吊打了一下。虽然面试不是说多么高大上的题目，但是基本都是很可以考察一个人基本功的题目。然后我想，我又犯这个错误了——好高骛远，眼高手低。</p>
 <p>貌似很多新人都会有这个问题。拿我来说，有些问题知道该怎么写，但不知为什么不这么写，举个随便想的栗子：</p>
 <pre><code class="language-js">function a(){
     return b(){
@@ -108,46 +99,75 @@
 <p>还有一个问题就是老是去追求高大上，比如Vue源码之类的，比如我就是。没完全搞明白怎么使用，怎么更有效率的使用，就去读源码，所以只是读完了没有任何收获。真正的基础以为都会了，结果考一个真正基础的反而傻眼了。</p>
 <p>悲哀啊，以后注意了，想把啥做好，差不多都一样，就是——从浅入深，认真思考。</p>
 
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://vanishcode.github.io/post/js-ru-he-gai-xie-mo-ren-fang-fa-ru-console">
-                  <h3 class="post-title">
-                    js如何改写默认方法（如console）
-                  </h3>
-                </a>
               </div>
-            
-
-            
-
-          </div>
-
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://vanishcode.github.io/post/js-ru-he-gai-xie-mo-ren-fang-fa-ru-console">
+              <h3 class="post-title">
+                js如何改写默认方法（如console）
+              </h3>
+            </a>
+          </div>
+        
 
-<script type="application/javascript">
+        
 
-AOS.init();
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://vanishcode.github.io/atom.xml" target="_blank">RSS</a>
+</div>
 
-hljs.initHighlightingOnLoad()
+<script>
+  hljs.initHighlightingOnLoad()
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
 
 </script>
 
-
-
-
+      </div>
+    </div>
   </body>
 </html>

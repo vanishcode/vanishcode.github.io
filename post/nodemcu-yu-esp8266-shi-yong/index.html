@@ -1,105 +1,95 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
-
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>NodeMCU与ESP8266使用 | vanishcode&#39;s home</title>
-<meta name="description" content="上班不摸鱼">
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+<meta name="description" content="上班不摸鱼" />
+<link rel="shortcut icon" href="https://vanishcode.github.io/favicon.ico?v=1576598441703">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://vanishcode.github.io/favicon.ico?v=1576598381493">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://vanishcode.github.io/styles/main.css">
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
 
 
 
   </head>
   <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://vanishcode.github.io">
-        <img src="https://vanishcode.github.io/images/avatar.png?v=1576598381493" class="site-logo">
-        <h1 class="site-title">vanishcode&#39;s home</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
-    </div>
-    <div>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://vanishcode.github.io">
+  <img class="avatar" src="https://vanishcode.github.io/images/avatar.png?v=1576598441703" alt="">
+  </a>
+  <h1 class="site-title">
+    vanishcode&#39;s home
+  </h1>
+  <p class="site-description">
+    上班不摸鱼
+  </p>
+  <div class="menu-container">
+    
       
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
+        <a href="/" class="menu">
+          首页
+        </a>
       
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
+    
       
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
+        <a href="/archives" class="menu">
+          归档
+        </a>
       
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
+    
       
-    </div>
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
+  <div class="social-container">
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
+    
       
-        
-      
-    </div>
-    <div class="site-description">
-      上班不摸鱼
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://vanishcode.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
+    
   </div>
 </div>
 
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">NodeMCU与ESP8266使用</h2>
-            <div class="post-date">2019-02-23</div>
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              NodeMCU与ESP8266使用
+            </h2>
+            <div class="post-info">
+              <span>
+                2019-02-23
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
             
-              <div class="feature-container" style="background-image: url('https://vanishcode.github.io/post-images/nodemcu-yu-esp8266-shi-yong.jpg')">
-              </div>
+              <img class="post-feature-image" src="https://vanishcode.github.io/post-images/nodemcu-yu-esp8266-shi-yong.jpg" alt="">
             
-            <div class="post-content">
-              <p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0gsdybcdtj30fi0igdl0.jpg" alt=""><br>
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p><img src="https://ws2.sinaimg.cn/large/006tKfTcly1g0gsdybcdtj30fi0igdl0.jpg" alt=""><br>
 摄于2019-2-21 17:54</p>
 <h3 id="前言">前言</h3>
 <p>最近买了个nodemcu玩，现在记录一下自己遇到的坑以及一些网上现有文章没有提到的一些问题。</p>
@@ -122,46 +112,91 @@ esp8266有很多型号，01，01s，12F，我原来以为esp8266就是一个东�
 <h3 id="结语">结语</h3>
 <p>最后要说的是，如果你从来没接触过，可以先买一个nodemcu，玩会了之后再买esp8266各种型号，这东西买一个比较贵，因为大头都在邮费上了......所以可以一起买10个，这样应该是60块都不到，但是nodemcu的话就买不了这么多了，而且有点大材小用，比如只是想弄个可以通过wifi控制开关的灯的话。</p>
 
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://vanishcode.github.io/post/fydeos-shi-yong-~_~duo-tu-sha-ji">
-                  <h3 class="post-title">
-                    FydeOS试用~_~【多图杀机】
-                  </h3>
-                </a>
               </div>
-            
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
+<li><a href="#%E5%8C%BA%E5%88%AB%E8%81%94%E7%B3%BB">区别联系</a></li>
+<li><a href="#esp8266%E5%9E%8B%E5%8F%B7%E8%A7%A3%E6%83%91">esp8266型号解惑</a></li>
+<li><a href="#%E5%8F%AF%E4%BB%A5%E4%BA%92%E5%88%B7%E5%9B%BA%E4%BB%B6%E5%90%97">可以互刷固件吗？</a></li>
+<li><a href="#%E5%88%B7%E5%86%99%E4%B9%8B%E5%9D%91">刷写之坑</a></li>
+<li><a href="#%E7%BB%93%E8%AF%AD">结语</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
-            
-
-          </div>
-
+              </div>
+            </div>
+          </article>
         </div>
-      </div>
-    </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://vanishcode.github.io/post/fydeos-shi-yong-~_~duo-tu-sha-ji">
+              <h3 class="post-title">
+                FydeOS试用~_~【多图杀机】
+              </h3>
+            </a>
+          </div>
+        
 
-<script type="application/javascript">
+        
 
-AOS.init();
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | 
+  <a class="rss" href="https://vanishcode.github.io/atom.xml" target="_blank">RSS</a>
+</div>
 
-hljs.initHighlightingOnLoad()
+<script>
+  hljs.initHighlightingOnLoad()
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+  let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+  // This should probably be throttled.
+  // Especially because it triggers during smooth scrolling.
+  // https://lodash.com/docs/4.17.10#throttle
+  // You could do like...
+  // window.addEventListener("scroll", () => {
+  //    _.throttle(doThatStuff, 100);
+  // });
+  // Only not doing it here to keep this Pen dependency-free.
+
+  window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+
+    mainNavLinks.forEach((link, index) => {
+      let section = document.getElementById(decodeURI(link.hash).substring(1));
+      let nextSection = null
+      if (mainNavLinks[index + 1]) {
+        nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+      }
+      console.log('section.offsetHeight', section.offsetHeight);
+      if (section.offsetTop <= fromTop) {
+        if (nextSection) {
+          if (nextSection.offsetTop > fromTop) {
+            link.classList.add("current");
+          } else {
+            link.classList.remove("current");    
+          }
+        } else {
+          link.classList.add("current");
+        }
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
 
 </script>
 
-
-
-
+      </div>
+    </div>
   </body>
 </html>
