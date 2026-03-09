@@ -1,0 +1,2 @@
+# vanishcode.github.io
+Blog
